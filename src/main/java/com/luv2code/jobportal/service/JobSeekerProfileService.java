@@ -1,0 +1,14 @@
+package com.luv2code.jobportal.service;
+
+import com.luv2code.jobportal.entity.JobSeekerProfile;
+
+import java.util.Optional;
+
+public interface JobSeekerProfileService {
+
+    public Optional<JobSeekerProfile> getOne(Integer id);
+
+    JobSeekerProfile addNew(JobSeekerProfile jobSeekerProfile);
+
+    JobSeekerProfile getCurrentSeekerProfile();
+}
